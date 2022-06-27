@@ -8,7 +8,7 @@ def create_app(test_config=None):
 
   @app.route('/')
   def hello_world():
-    return 'Hello, World!'
+    return jsonify({'message':'Hello, World!'})
 
   
   return app
