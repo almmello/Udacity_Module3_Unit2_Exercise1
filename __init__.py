@@ -10,6 +10,11 @@ def create_app(test_config=None):
   def hello_world():
     return jsonify({'message':'Hello, World!'})
 
+
+  @app.route('/smiley')
+  def smiley():
+    return ':)'
+
   
   return app
 
